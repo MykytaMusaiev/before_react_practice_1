@@ -1,0 +1,51 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+
+  &.is-completed {
+    .TodoItem__title {
+      text-decoration: line-through;
+      color: $c-text-secondary;
+    }
+  }
+
+  &__checkbox-label {
+    cursor: pointer;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__details {
+    font-size: 14px;
+    color: $c-text-secondary;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__delete-button {
+    background: none;
+    border: none;
+    color: $c-danger;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import './_variables.scss';
+@import './_reset.scss';
+@import '../../App.scss';
+@import '../../components/TodoList/TodoList.scss';
+@import '../../components/TodoItem/TodoItem.scss';
+@import '../../components/TodoForm/TodoForm.scss';
+@import '../../components/FilterControls/FilterControls.scss';
+
+body {
+  background-color: $c-bg;
+  font-family: 'Arial', sans-serif;
+  color: $c-text-primary;
+}

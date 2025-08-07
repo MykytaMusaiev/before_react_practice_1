@@ -1,0 +1,29 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $c-text-primary;
+  }
+
+  &__main {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__sidebar {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  &__content {
+    flex: 3;
+  }
+}
