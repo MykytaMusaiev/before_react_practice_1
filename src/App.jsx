@@ -1,7 +1,7 @@
 import { TodoList } from './components/TodoList/TodoList';
 import { TodoForm } from './components/TodoForm/TodoForm';
 import { FilterControls } from './components/FilterControls/FilterControls';
-import { Header } from './components/HEader';
+import { Header } from './components/Header/Header';
 
 import todosFromServer from './api/todos.json';
 
