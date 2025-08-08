@@ -1,34 +1,41 @@
 .FilterControls {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  align-items: center;
-
-  input,
-  select {
-    padding: 10px;
-    border: 1px solid $c-border;
-    border-radius: 4px;
-  }
-
-  .buttons {
-    margin-left: auto;
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
 
-    button {
-      padding: 10px 15px;
-      border: 1px solid $c-primary;
-      border-radius: 4px;
-      background-color: #fff;
-      color: $c-primary;
-      cursor: pointer;
-      transition: all 0.2s ease;
-
-      &:hover {
-        background-color: $c-primary;
-        color: white;
-      }
+    input,
+    select {
+        padding: 10px;
+        border: 1px solid $c-border;
+        border-radius: 4px;
     }
-  }
+
+    .sortBy {
+        display: flex;
+        align-items: center;
+    }
+
+    .buttons {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+            display: flex;
+            padding: 10px 15px;
+            border: 1px solid $c-primary;
+            border-radius: 4px;
+            background-color: #fff;
+            color: $c-primary;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: $c-primary;
+                color: white;
+            }
+        }
+    }
 }

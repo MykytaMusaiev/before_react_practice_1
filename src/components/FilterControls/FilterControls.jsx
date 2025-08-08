@@ -1,3 +1,5 @@
+import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
+
 export const FilterControls = () => (
   <div className="FilterControls">
     <input type="text" placeholder="Search by title..." />
@@ -8,8 +10,11 @@ export const FilterControls = () => (
       <option>Study</option>
     </select>
     <div className="buttons">
-      <button>Sort by Title</button>
-      <button>Sort by Due Date</button>
+      <p className="sortBy">Sort by:</p>      
+      <button>Priority<FaArrowUp /></button>
+      <button>Title<FaArrowDown /></button>
+      <button>Due Date</button>
+      <button>Clear</button>
     </div>
   </div>
 );
